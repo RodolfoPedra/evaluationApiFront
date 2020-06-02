@@ -73,6 +73,24 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
 
   /* ESTILIZAÇÕES */
 
-.caixa {
-    background: #EB5;
+#account {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.formItens {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.formItens input{
+    height: 36px;
+    margin-bottom: 20px;
+}
+
+#btnEntrar {
+    margin-top: 20px;
 }
