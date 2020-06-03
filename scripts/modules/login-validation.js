@@ -5,6 +5,7 @@ export default function initLogin() {
     
     function getDataLogin() {
         
+        loginError.innerHTML = '';
         const login = document.querySelectorAll('[data-login]');
 
         console.log(login[0].value);
@@ -34,7 +35,9 @@ export default function initLogin() {
         if(response.status == 401){
             loginError.innerHTML = responseLogin.error;
         }
-        sessionStorage.setItem("datasUser", responseLogin);
+
+        const dataUser = JSON.stringify(responseLogin);
+        sessionStorage.setItem('dataUser', dataUser);
     }
     
 }

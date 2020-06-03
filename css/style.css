@@ -94,3 +94,55 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
 #btnEntrar {
     margin-top: 20px;
 }
+
+.headerHome {
+    position: relative;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.listaHeader {
+    position: absolute;
+    right: 0;
+    display: flex;
+}
+
+.listaHeader li {
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.introDescricao {
+    margin: 80px 0;
+}
+
+.introDescricao h1 {
+    font-size:24px;
+    margin-bottom: 12px;
+}
+
+.introDescricao span {
+    font-size:18px
+}
+
+.profissionaisRelacao h2 {
+    font-size: 18px
+}
+
+.tabelaRelacao th{
+    text-align: left;
+}
+
+.tabelaRelacao td:nth-child(1) {
+    min-width: 120px;
+}
+
+.modal-cadastro {
+    height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+}

@@ -12,18 +12,70 @@
 </head>
 <body>
 
-    <div class="container" id="account">
-        <form action="" method="post" class="grid-5 formItens" > 
-            <label for="flogin">e-mail</label>
-            <input type="text" name="flogin" id="flogin" data-login>
-            <label for="fpassword">senha</label>
-            <input type="password" name="fpassword" id="fpassword" data-login>
-            <p class="loginError"></p>
-            <input type="button" value="Entrar" id="btnEntrar">
-        </form>
-    </div>
+    <header class="headerHome container">
+            <div class="localHeader">
+                <span>App Avaliações</span>
+            </div>
+
+            <ul class="listaHeader">
+                <li><a href="#">Minhas Avaliações</a></li>
+                <li>Entrar</li>
+                <li>Cadastre-se</li>
+            </ul>
+    </header>
+
+    <section class="introducaoHome container">
+        <div class="introDescricao grid-16">
+            <h1>Avalie os melhores profissionais de sua cidade aqui</h1>
+            <span>Bares, Restaurantes, Cantinas e muito mais...</span>
+        </div>
+    </section>
+    
+    
+    <section class="profissionaisHome container">
+        <div class="profissionaisRelacao grid-16">
+        <h2>Profissionais</h2>
+            <table class="tabelaRelacao grid-12">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Estabelecimento</th>
+                        <th>Nota</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Prof 1</td>
+                        <td>Restaura ali da Esquina</td>
+                        <td>4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="modal-cadastro" data-modalCadastro="container">
+        <div class="container" id="account">
+            <button data-modalCadastro="fechar" class="fechar">X</button>
+            <form action="" method="post" class="grid-5 formItens" >
+                <select name="" id="">
+                    <option value="cliente">Cliente</option>
+                    <option value="profissional">Profissional</option>
+                </select>
+                <label for="flogin">Nome</label>
+                <input type="text" name="flogin" id="flogin" data-modalCadastro="nome"> 
+                <label for="flogin">E-mail</label>
+                <input type="text" name="flogin" id="flogin" data-modalCadastro="email">
+                <label for="fpassword">Senha</label>
+                <input type="password" name="fpassword" id="fpassword" data-modalCadastro="password">
+                <label for="fpassword">Local de Trabalho</label>
+                <input type="password" name="fpassword" id="fpassword" data-modalCadastro="workplace">
+                <p class="loginError"></p>
+                <input type="button" value="Entrar" id="btnEntrar">
+            </form>
+        </div>
+    </section>
 
     <script type="module" src="./scripts/index.js"></script>
-
 </body>
 </html>
