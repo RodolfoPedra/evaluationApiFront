@@ -73,17 +73,12 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
 
   /* ESTILIZAÇÕES */
 
-#account {
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    align-items: center;
-}
 
 .formItens {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-top: 40px;
 }
 
 .formItens input{
@@ -93,6 +88,7 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
 
 #btnEntrar {
     margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 .headerHome {
@@ -138,11 +134,65 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
     min-width: 120px;
 }
 
-.modal-cadastro {
+/* ESTILIZAÇÕES MODAIS */
+
+.modal-container {
     height: 100vh;
     width: 100%;
     background: rgba(0,0,0,.5);
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
 }
+
+.modal-cadastro {
+    display: none;
+}
+
+.modal-login {
+    display: none;
+}
+
+.modal-itens {
+    position: relative;
+    background: #F7F6F2;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    border: 10px solid #2CA55C;
+    box-shadow: 0 0 0 10px #FFF;
+}
+
+.fechar {
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    width: 50px;
+    height: 50px;
+}
+
+#seletorTipoPessoa{
+    margin-bottom: 20px;
+}
+
+#fworkplace {
+    display: none;
+}
+
+#fworkplace.ativo {
+    display: block;
+}
+
+/* ATIVAR MODAL */
+
+.modal-cadastro.ativo {
+    display: flex;
+}
+
+.modal-login.ativo {
+    display: flex;
+}
+

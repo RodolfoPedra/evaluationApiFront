@@ -19,8 +19,8 @@
 
             <ul class="listaHeader">
                 <li><a href="#">Minhas Avaliações</a></li>
-                <li>Entrar</li>
-                <li>Cadastre-se</li>
+                <li id="entrar">Entrar</li>
+                <li id="cadastrar">Cadastre-se</li>
             </ul>
     </header>
 
@@ -54,22 +54,45 @@
         </div>
     </section>
 
-    <section class="modal-cadastro" data-modalCadastro="container">
-        <div class="container" id="account">
-            <button data-modalCadastro="fechar" class="fechar">X</button>
+    <section class="modal-container modal-cadastro" data-modalCadastro="container">
+        <div class="modal-itens" id="account">
+            <button id="fecharCadastro">X</button>
             <form action="" method="post" class="grid-5 formItens" >
-                <select name="" id="">
+                <span>Você é ?</span>
+                <select name="" id="seletorTipoPessoaCadastro">
                     <option value="cliente">Cliente</option>
                     <option value="profissional">Profissional</option>
                 </select>
-                <label for="flogin">Nome</label>
-                <input type="text" name="flogin" id="flogin" data-modalCadastro="nome"> 
-                <label for="flogin">E-mail</label>
-                <input type="text" name="flogin" id="flogin" data-modalCadastro="email">
+                <label for="fname">Nome</label>
+                <input type="text" name="fname" id="fname" data-cadastro> 
+                <label for="femail">E-mail</label>
+                <input type="text" name="femail" id="femail" data-cadastro>
                 <label for="fpassword">Senha</label>
-                <input type="password" name="fpassword" id="fpassword" data-modalCadastro="password">
-                <label for="fpassword">Local de Trabalho</label>
-                <input type="password" name="fpassword" id="fpassword" data-modalCadastro="workplace">
+                <input type="password" name="fpassword" id="fpassword" data-cadastro>
+                <div id="fworkplace">
+                    <label for="fworkplace">Local de Trabalho</label>
+                    <input type="text" name="fworkplace" data-cadastro>
+                </div>
+                <p class="signupError"></p>
+                <input type="button" value="Cadastrar" id="btnCadastrar">
+            </form>
+        </div>
+    </section>
+
+    <section class="modal-container modal-login" data-modalCadastro="container">
+        <div class="modal-itens" id="account">
+            <button id="fecharLogin">X</button>
+            <form action="" method="post" class="grid-5 formItens" >
+                <span>Você é ?</span>
+                <select name="" id="seletorTipoPessoaLogin">
+                    <option value="">Selecione o tipo de Usuário</option>
+                    <option value="cliente">Cliente</option>
+                    <option value="profissional">Profissional</option>
+                </select> 
+                <label for="flogin">E-mail</label>
+                <input type="text" name="flogin" id="flogin" data-login>
+                <label for="fpassword">Senha</label>
+                <input type="password" name="fpassword" id="fpassword" data-login>
                 <p class="loginError"></p>
                 <input type="button" value="Entrar" id="btnEntrar">
             </form>
