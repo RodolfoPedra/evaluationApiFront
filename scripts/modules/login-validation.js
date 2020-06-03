@@ -3,23 +3,15 @@ import {configs} from './configsApi.js';
 export default function initLogin() {
 
     const btnEntrar = document.querySelector('#btnEntrar');
-    const loginError = document.querySelector('.loginError');
+    const loginMensagem = document.querySelector('.loginMensagem');
     
     function getDataLogin() {
         
-        loginError.innerHTML = '';
-        const selectorTipoPessoa = document.querySelector('#seletorTipoPessoaLogin');
+        loginMensagem.innerHTML = '';
+        const seletorTipoPessoa = document.querySelector('#seletorTipoPessoaLogin');
         const login = document.querySelectorAll('[data-login]');
-
-        // console.log('selector pessoa login: ', selectorTipoPessoa.value);
-        
-
-        console.log(login[0].value);
-        console.log(login[1].value);
-        console.log(selectorTipoPessoa.value);
-        
-        
-        validationLogin(login[0].value, login[1].value, selectorTipoPessoa.value);
+            
+        validationLogin(login[0].value, login[1].value, seletorTipoPessoa.value);
     }
 
     btnEntrar.addEventListener('click', getDataLogin);
@@ -41,9 +33,9 @@ export default function initLogin() {
         const responseLogin = await response.json();
 
         if(response.status == 401){
-            loginError.innerHTML = responseLogin.error;
+            loginMensagem.innerHTML = responseLogin.error;
         }
-        loginError.innerHTML = responseLogin.token;
+        loginMensagem.innerHTML = responseLogin.ok;
 
         const dataUser = JSON.stringify(responseLogin);
         sessionStorage.setItem('dataUser', dataUser);

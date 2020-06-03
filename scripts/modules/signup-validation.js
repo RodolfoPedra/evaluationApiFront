@@ -3,11 +3,11 @@ import {configs} from './configsApi.js';
 export default function initSignUp() {
 
     const btnCadastrar = document.querySelector('#btnCadastrar');
-    const signupError = document.querySelector('.signupError');
+    const signupMensagem = document.querySelector('.signupMensagem');
     
     function getDataSignup() {
         
-        signupError.innerHTML = '';
+        signupMensagem.innerHTML = '';
         const seletorTipoPessoa = document.querySelector('#seletorTipoPessoaCadastro');
         const signup = document.querySelectorAll('[data-cadastro]');
 
@@ -16,7 +16,7 @@ export default function initSignUp() {
         }else if(seletorTipoPessoa.value == "profissional") {
             checkSignupProfessional(signup[0].value, signup[1].value, signup[2].value, signup[3].value);
         }else {
-            signupError.innerHTML = 'Selecione um Tipo de Perfil';
+            signupMensagem.innerHTML = 'Selecione um Tipo de Perfil';
         }
 
         signup[0].value = ''; 
@@ -46,7 +46,7 @@ export default function initSignUp() {
         const responseLogin = await response.json();
 
         if(response.status == 400){
-            signupError.innerHTML = responseLogin.error;
+            signupMensagem.innerHTML = responseLogin.error;
         }
 
     }
@@ -69,11 +69,8 @@ export default function initSignUp() {
         const responseLogin = await response.json();
 
         if(response.status == 400){
-            signupError.innerHTML = responseLogin.error;
+            signupMensagem.innerHTML = responseLogin.error;
         }
-
-        // const dataUser = JSON.stringify(responseLogin);
-        // sessionStorage.setItem('dataUser', dataUser);
     }
     
 }

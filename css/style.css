@@ -126,11 +126,11 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
     font-size: 18px
 }
 
-.tabelaRelacao th{
+.tabelaAvaliacoes th{
     text-align: left;
 }
 
-.tabelaRelacao td:nth-child(1) {
+.tabelaAvaliacoes td:nth-child(1) {
     min-width: 120px;
 }
 
