@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/clr-ui.min.css">
     <link rel="stylesheet" href="./css/style.css">
 
     <title>Document</title>
@@ -18,11 +16,13 @@
                 <span>App Avaliações</span>
             </div>
 
-            <ul class="listaHeader">
-                <li>Minhas Avaliações</li>
-                <li id="entrar">Login</li>
-                <li id="cadastrar">Cadastre-se</li>
-            </ul>
+            <div class="listaHeader">
+                <ul>
+                    <li><a href="./pages/client.html">Minhas Avaliações</a></li>
+                    <li id="entrar">Login</li>
+                    <li id="cadastrar">Cadastre-se</li>
+                </ul>
+            </div>
     </header>
 
     <section class="introducaoHome container">
@@ -34,22 +34,17 @@
     
     
     <section class="profissionaisHome container">
-        <div class="profissionaisRelacao grid-16">
+        <div class="profissionaisRelacao grid-8">
         <h2>Profissionais</h2>
-            <table class="tabelaAvaliacoes grid-12">
+            <table class="table tabelaAvaliacoes">
                 <thead>
                     <tr>
-                        <th>Nome</th>
-                        <th>Estabelecimento</th>
+                        <th >Nome</th>
+                        <th >Estabelecimento</th>
+                        <!-- <th>Avaliar</th> -->
                     </tr>
                 </thead>
                 <tbody>
-                    <label class="itemCorpoTabela">
-                        <tr>
-                            <td>Prof 1</td>
-                            <td>Restaura ali da Esquina</td>
-                        </tr>
-                    </label>
                 </tbody>
             </table>
         </div>

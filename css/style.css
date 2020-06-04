@@ -97,6 +97,8 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
     height: 60px;
     display: flex;
     align-items: center;
+    background: none;
+    color: #262625;
 }
 
 .localHeader span {
@@ -156,13 +158,20 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
     font-size: 18px
 }
 
-.tabelaAvaliacoes th{
-    padding: 20px 0;
+.tabelaAvaliacoes th, .tabelaAvaliacoes td{
     text-align: left;
 }
 
-.tabelaAvaliacoes td:nth-child(1) {
-    min-width: 120px;
+.tabelaAvaliacoes th {
+    font-size: 14px;
+}
+
+.tabelaAvaliacoes .btnAvaliar {
+    font-size: 12px;
+    height: 22px;
+    border: 2px solid #44AF6E;
+    border-radius: 3px;
+    padding-bottom: 2px !important;
 }
 
 
@@ -228,3 +237,17 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
     display: flex;
 }
 
+/* ESTILOS PAGINA PROFESSIONAL */
+
+.avaliacao {
+    margin-top: 30px;
+}
+
+.itens-avaliacao {
+    display: flex;
+    align-items: center;
+}
+
+#nota-avaliacao {
+    width: 30px;
+}
