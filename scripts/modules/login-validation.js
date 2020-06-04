@@ -4,7 +4,7 @@ export default function initLogin() {
 
     const btnEntrar = document.querySelector('#btnEntrar');
     const loginMensagem = document.querySelector('.loginMensagem');
-    
+
     function getDataLogin() {
         
         loginMensagem.innerHTML = '';

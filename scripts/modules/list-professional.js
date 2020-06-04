@@ -42,8 +42,6 @@ export default function initListProfessionals() {
         const responseProfessionals = await response.json();
 
         createTableProfessional(responseProfessionals);
-
-        console.log(responseProfessionals);
         
     }
 

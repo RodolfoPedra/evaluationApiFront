@@ -10,6 +10,8 @@ export default function initPerfilProfessional() {
     const dados = sessionStorage.getItem('dataUser');
     const usuario = JSON.parse(dados);
 
+    console.log('login: ', usuario);
+    
 
     function setNameProfessional(professional) {
         dadosProfissional[0].innerHTML = professional.name;
