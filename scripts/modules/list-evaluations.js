@@ -14,11 +14,9 @@ export default function initListEvaluations() {
     }
     td1.innerHTML = 'Nome2';
     td2.innerHTML = 'Conveniência MultiMarcas';
-    td3.innerHTML = '5';
 
     tr.appendChild(td1);
     tr.appendChild(td2);
-    tr.appendChild(td3);
     
     tabelaAvaliacoes.appendChild(tr);
 

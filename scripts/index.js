@@ -6,5 +6,5 @@ import initListEvaluations from './modules/list-evaluations.js';
 initLogin();
 initModal();
 initSignUp();
-initListEvaluations();
+// initListEvaluations();
 
