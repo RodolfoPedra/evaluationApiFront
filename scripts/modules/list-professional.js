@@ -8,9 +8,20 @@ export default function initListProfessionals() {
     const professionalTabelaDados = document.querySelector('.tabelaAvaliacoes tbody');
 
     function showDataProfessional(event) {
+
+        const dados = sessionStorage.getItem('dataUser');
+        const usuario = JSON.parse(dados);
+
+        console.log('dados usuario: ', usuario);
+
+        if(usuario) {
+            sessionStorage.setItem('idProfissional', JSON.stringify(+event.target.id));
+            window.location.href = "client.html";
+        }else {
+            alert('Faça login para realizar avaliacões!');
+        }
         
-        sessionStorage.setItem('idProfissional', JSON.stringify(+event.target.id));
-        window.location.href = "pages/professional.html";
+        
     }
 
     professionalTabelaDados.addEventListener('click', showDataProfessional);

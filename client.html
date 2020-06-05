@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/clr-ui.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="headerHome container">
+        <div class="localHeader">
+            <span>GARCONOTA10</span>
+        </div>
+
+        <div class="listaHeader">
+            <ul >
+                <!-- <li><a href="#">Minhas Avaliações</a></li> -->
+                <li id="nomeLogin"></li>
+                <li class="cadastrarOuSair"></li>
+                <li class="sair">Sair</li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="introducaoHome container">
+        <div class="introDescricao grid-16">
+            <h1 data-profissionalDados></h1>
+            <span data-profissionalDados></span>
+        </div>
+    </section>
+
+    <section class="avaliacao container">
+        <div class="grid-12 itens-avaliacao">
+            <label for="">Opinião</label>
+            <textarea name="" id="" cols="30" rows="1" data-avaliacao></textarea>
+            <label for="">Nota</label>
+            <input type="text" name="" id="nota-avaliacao" data-avaliacao>
+            <input type="button" value="Avaliar" id="btnAvaliar">
+        </div> 
+    </section>
+
+    <section class="profissionaisHome container">
+        <div class="profissionaisRelacao">
+        <h2>Profissionais</h2>
+            <table class="table avaliacoesProfissional">
+                <thead>
+                    <tr>
+                        <th>Opinião</th>
+                        <th>Notas</th>
+                        <!-- <th>Opinião</th>
+                        <th>Nota</th> -->
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script type="module" src="../scripts/client.js"></script>
+</body>
+</html>

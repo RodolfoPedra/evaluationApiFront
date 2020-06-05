@@ -1,7 +1,7 @@
 export default function initModal() {
     
     const btnLogin = document.querySelector('#nomeLogin');
-    const btnCadastrar = document.querySelector('#cadastrarOuSair');
+    const btnCadastrar = document.querySelector('.cadastrarOuSair');
 
     const containerModalLogin = document.querySelector('.modal-login');
     const btnFecharLogin = document.querySelector('#fecharLogin');

@@ -251,3 +251,7 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
 #nota-avaliacao {
     width: 30px;
 }
+
+.hideLogin {
+    display: none!important; 
+}

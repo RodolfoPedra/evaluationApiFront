@@ -12,6 +12,10 @@ export default function initLogin() {
         const login = document.querySelectorAll('[data-login]');
             
         validationLogin(login[0].value, login[1].value, seletorTipoPessoa.value);
+
+        setInterval(() => {
+            window.location.reload();
+        }, 1000)
     }
 
     btnEntrar.addEventListener('click', getDataLogin);
