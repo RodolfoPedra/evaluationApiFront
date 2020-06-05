@@ -14,8 +14,8 @@ export default function initPerfilProfessional() {
     
 
     function setNameProfessional(professional) {
-        dadosProfissional[0].innerHTML = professional.name;
-        dadosProfissional[1].innerHTML = professional.workplace;
+        dadosProfissional[0].innerHTML = professional[0].professional.name;
+        dadosProfissional[1].innerHTML = professional[0].professional.workplace;
     }
 
     function createTableProfessional(professional) {
@@ -30,20 +30,15 @@ export default function initPerfilProfessional() {
             const btnAvaliar = document.createElement('input');
 
             td1.id = professional[i].id;
-            td1.innerHTML = professional[i].opinion;
+            td1.innerHTML = professional[i].user.name;
             td2.id = professional[i].id;
-            td2.innerHTML = professional[i].note;
-            // btnAvaliar.type = "button";
-            // btnAvaliar.value = "Avaliar";
-            // btnAvaliar.classList.add('btnAvaliar');
-            // btnAvaliar.id = professionals[i].id;
-            // td3.appendChild(btnAvaliar);
+            td2.innerHTML = professional[i].opinion;
+            td3.id = professional[i].id;
+            td3.innerHTML = professional[i].note;
 
             tr.appendChild(td1);
             tr.appendChild(td2);
-            // tr.appendChild(td3);
-            // tr.appendChild(td4);
-            // tr.appendChild(td3);
+            tr.appendChild(td3);
             
             avaliacoesProfissional.appendChild(tr);
         }
@@ -60,11 +55,14 @@ export default function initPerfilProfessional() {
         })
         const responseEvaluation = await response.json();
 
-        if(responseEvaluation.evaluationsProfessional.length == 0){
+        if(responseEvaluation.length == 0){
             alert('Profissional ainda não foi avaliado!');
         }
 
-        createTableProfessional(responseEvaluation.evaluationsProfessional);
+        console.log('avaliações: ', responseEvaluation);
+        
+
+        createTableProfessional(responseEvaluation);
         setNameProfessional(responseEvaluation);
         
     }
