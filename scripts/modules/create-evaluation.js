@@ -41,14 +41,6 @@ export default function initCreateEvaluation() {
         const responseLogin = await response.json();
 
         window.location.reload();
-        
-        // if(response.status == 401){
-        //     loginMensagem.innerHTML = responseLogin.error;
-        // }
-        // loginMensagem.innerHTML = responseLogin.ok;
-
-        // const dataUser = JSON.stringify(responseLogin);
-        // sessionStorage.setItem('dataUser', dataUser);
     }
     
 }
