@@ -158,20 +158,35 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
     font-size: 18px
 }
 
-.tabelaAvaliacoes th, .tabelaAvaliacoes td{
+.tabelaProfissionais {
+    border-collapse: collapse;
+}
+
+.tabelaProfissionais th, .tabelaProfissionais td{
     text-align: left;
 }
 
-.tabelaAvaliacoes th {
+.tabelaProfissionais th {
     font-size: 14px;
+    background: #E7E5E2;
+    height: 48px;
+    display: table-cell;
+    vertical-align: middle;
 }
 
-.tabelaAvaliacoes .btnAvaliar {
-    font-size: 12px;
-    height: 22px;
-    border: 2px solid #44AF6E;
-    border-radius: 3px;
-    padding-bottom: 2px !important;
+.tabelaProfissionais td {
+    font-size: 14px;
+    height: 48px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.tabelaProfissionais thead tr th:first-child {
+    border-radius: 10px 0 0 10px;
+}
+
+.tabelaProfissionais thead tr th:last-child {
+    border-radius: 0 10px 10px 0;
 }
 
 

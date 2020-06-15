@@ -2,10 +2,7 @@ import {configs} from './configsApi.js';
 
 export default function initListProfessionals() {
 
-    const tabelaAvaliacoes = document.querySelector('.tabelaAvaliacoes tbody');
-    const professionalTabela = document.querySelector('.tabelaAvaliacoes td');
-
-    const professionalTabelaDados = document.querySelector('.tabelaAvaliacoes tbody');
+    const professionalTabelaDados = document.querySelector('.tabelaProfissionais tbody');
 
     function showDataProfessional(event) {
 
@@ -32,19 +29,23 @@ export default function initListProfessionals() {
         for(let i = 0; i < professionals.length; i++) {
 
             const tr = document.createElement('tr');
+            const fotoPerfil = document.createElement('img');
             const td1 = document.createElement('td');
             const td2 = document.createElement('td');
-        
+            const td3 = document.createElement('td');
+            
+            fotoPerfil.src = './'
             td1.id = professionals[i].id;
             td1.innerHTML = professionals[i].name;
             td2.id = professionals[i].id;
             td2.innerHTML = professionals[i].workplace;
+            td3.innerHTML = 4;
 
             tr.appendChild(td1);
             tr.appendChild(td2);
-            // tr.appendChild(td3);
+            tr.appendChild(td3);
             
-            tabelaAvaliacoes.appendChild(tr);
+            professionalTabelaDados.appendChild(tr);
         }
     }
     
