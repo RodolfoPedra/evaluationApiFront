@@ -29,17 +29,27 @@ export default function initListProfessionals() {
         for(let i = 0; i < professionals.length; i++) {
 
             const tr = document.createElement('tr');
+            const fotoPerfil = document.createElement('img');
+            const span = document.createElement('span');
             const td1 = document.createElement('td');
             const td2 = document.createElement('td');
-        
+            const td3 = document.createElement('td');
+            
+            // fotoPerfil.src = "../images/ave.jpg";
+            // fotoPerfil.id = professionals[i].id;
+            // fotoPerfil.classList.add('fotoPerfil');
             td1.id = professionals[i].id;
             td1.innerHTML = professionals[i].name;
             td2.id = professionals[i].id;
             td2.innerHTML = professionals[i].workplace;
+            td3.id = professionals[i].id;
+            td3.innerHTML = 4;
 
+            // td1.appendChild(fotoPerfil);
+            // td1.appendChild(span);
             tr.appendChild(td1);
             tr.appendChild(td2);
-            // tr.appendChild(td3);
+            tr.appendChild(td3);
             
             tabelaAvaliacoes.appendChild(tr);
         }
