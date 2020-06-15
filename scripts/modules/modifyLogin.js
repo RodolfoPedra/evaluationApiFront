@@ -7,8 +7,6 @@ export default function initModifyLogin() {
     const dados = sessionStorage.getItem('dataUser');
     const usuario = JSON.parse(dados);
 
-    console.log('dados usuario: ', usuario);
-
     if(usuario) {
         btnLogin.innerHTML = usuario.user.name;
         btnCadastrar.classList.add('hideLogin');

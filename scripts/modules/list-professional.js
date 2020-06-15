@@ -17,12 +17,9 @@ export default function initListProfessionals() {
         }else {
             alert('Faça login para realizar avaliacões!');
         }
-        
-        
     }
 
     professionalTabelaDados.addEventListener('click', showDataProfessional);
-
 
     function createTableProfessional(professionals) {
 
@@ -54,7 +51,6 @@ export default function initListProfessionals() {
         const responseProfessionals = await response.json();
 
         createTableProfessional(responseProfessionals);
-        
     }
 
     allProfessionals();
