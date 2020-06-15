@@ -12,10 +12,6 @@ export default function initLogin() {
         const login = document.querySelectorAll('[data-login]');
             
         validationLogin(login[0].value, login[1].value, seletorTipoPessoa.value);
-
-        setInterval(() => {
-            window.location.reload();
-        }, 1000)
     }
 
     btnEntrar.addEventListener('click', getDataLogin);
@@ -38,11 +34,15 @@ export default function initLogin() {
 
         if(response.status == 401){
             loginMensagem.innerHTML = responseLogin.error;
+        }else {
+            loginMensagem.innerHTML = responseLogin.ok;
+            setInterval(() => {
+                window.location.reload();
+            }, 1000);
+            const dataUser = JSON.stringify(responseLogin);
+            sessionStorage.setItem('dataUser', dataUser);
         }
-        loginMensagem.innerHTML = responseLogin.ok;
 
-        const dataUser = JSON.stringify(responseLogin);
-        sessionStorage.setItem('dataUser', dataUser);
     }
     
 }
