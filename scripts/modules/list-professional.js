@@ -2,10 +2,7 @@ import {configs} from './configsApi.js';
 
 export default function initListProfessionals() {
 
-    const tabelaAvaliacoes = document.querySelector('.tabelaAvaliacoes tbody');
-    const professionalTabela = document.querySelector('.tabelaAvaliacoes td');
-
-    const professionalTabelaDados = document.querySelector('.tabelaAvaliacoes tbody');
+    const professionalTabelaDados = document.querySelector('.tabelaProfissionais tbody');
 
     function showDataProfessional(event) {
 
@@ -30,19 +27,29 @@ export default function initListProfessionals() {
 
             const tr = document.createElement('tr');
             const fotoPerfil = document.createElement('img');
+<<<<<<< HEAD
             const span = document.createElement('span');
+=======
+>>>>>>> 4614714b2d6e617e9c62826d64e42bc67b55165b
             const td1 = document.createElement('td');
             const td2 = document.createElement('td');
             const td3 = document.createElement('td');
             
+<<<<<<< HEAD
             // fotoPerfil.src = "../images/ave.jpg";
             // fotoPerfil.id = professionals[i].id;
             // fotoPerfil.classList.add('fotoPerfil');
+=======
+            fotoPerfil.src = './'
+>>>>>>> 4614714b2d6e617e9c62826d64e42bc67b55165b
             td1.id = professionals[i].id;
             td1.innerHTML = professionals[i].name;
             td2.id = professionals[i].id;
             td2.innerHTML = professionals[i].workplace;
+<<<<<<< HEAD
             td3.id = professionals[i].id;
+=======
+>>>>>>> 4614714b2d6e617e9c62826d64e42bc67b55165b
             td3.innerHTML = 4;
 
             // td1.appendChild(fotoPerfil);
@@ -51,7 +58,7 @@ export default function initListProfessionals() {
             tr.appendChild(td2);
             tr.appendChild(td3);
             
-            tabelaAvaliacoes.appendChild(tr);
+            professionalTabelaDados.appendChild(tr);
         }
     }
     
