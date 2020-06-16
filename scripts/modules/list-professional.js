@@ -2,7 +2,7 @@ import {configs} from './configsApi.js';
 
 export default function initListProfessionals() {
 
-    const professionalTabelaDados = document.querySelector('.tabelaProfissionais tbody');
+    const professionalTabelaDados = document.querySelector('.tableBody');
 
     function showDataProfessional(event) {
 
@@ -25,30 +25,30 @@ export default function initListProfessionals() {
 
         for(let i = 0; i < professionals.length; i++) {
 
-            const tr = document.createElement('tr');
+            const ul = document.createElement('ul');
             const fotoPerfil = document.createElement('img');
             const span = document.createElement('span');
-            const td1 = document.createElement('td');
-            const td2 = document.createElement('td');
-            const td3 = document.createElement('td');
+            const li1 = document.createElement('li');
+            const li2 = document.createElement('li');
+            const li3 = document.createElement('li');
             
             // fotoPerfil.src = "../images/ave.jpg";
             // fotoPerfil.id = professionals[i].id;
             // fotoPerfil.classList.add('fotoPerfil');
-            td1.id = professionals[i].id;
-            td1.innerHTML = professionals[i].name;
-            td2.id = professionals[i].id;
-            td2.innerHTML = professionals[i].workplace;
-            td3.id = professionals[i].id;
-            td3.innerHTML = 4;
+            li1.id = professionals[i].id;
+            li1.innerHTML = professionals[i].name;
+            li2.id = professionals[i].id;
+            li2.innerHTML = professionals[i].workplace;
+            li3.id = professionals[i].id;
+            li3.innerHTML = 4;
 
             // td1.appendChild(fotoPerfil);
             // td1.appendChild(span);
-            tr.appendChild(td1);
-            tr.appendChild(td2);
-            tr.appendChild(td3);
+            ul.appendChild(li1);
+            ul.appendChild(li2);
+            ul.appendChild(li3);
             
-            professionalTabelaDados.appendChild(tr);
+            professionalTabelaDados.appendChild(ul);
         }
     }
     

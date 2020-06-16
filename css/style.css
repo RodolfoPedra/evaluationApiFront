@@ -160,78 +160,34 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
     font-size: 18px
 }
 
-<<<<<<< HEAD
-.tabelaAvaliacoes {
-    border-collapse: collapse;
-}
-
-.tabelaAvaliacoes th, .tabelaAvaliacoes td{
-=======
-.tabelaProfissionais {
-    border-collapse: collapse;
-}
-
-.tabelaProfissionais th, .tabelaProfissionais td{
->>>>>>> 4614714b2d6e617e9c62826d64e42bc67b55165b
-    text-align: left;
+.tabelaProfissionais ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 48px;
-}
-.tabelaAvaliacoes thead {
-    background: #F7F6F2;
-}
-
-.tabelaProfissionais th {
-    font-size: 14px;
-<<<<<<< HEAD
-    min-width: 240px;
-}
-
-.tabelaAvaliacoes th:first-child {
-    border-radius: 5px 0 0 5px;
     padding-left: 10px;
 }
 
-.tabelaAvaliacoes th:last-child {
-    border-radius: 0 5px 5px 0;
-=======
-    background: #E7E5E2;
-    height: 48px;
-    display: table-cell;
-    vertical-align: middle;
->>>>>>> 4614714b2d6e617e9c62826d64e42bc67b55165b
+.tabelaProfissionais .tableBody ul {
+    border: 1px solid #F3F3F3;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 0 0 1px #e1e2e1;
 }
 
-.tabelaProfissionais td {
-    font-size: 14px;
-    height: 48px;
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.tabelaProfissionais thead tr th:first-child {
-    border-radius: 10px 0 0 10px;
-}
-
-.tabelaProfissionais thead tr th:last-child {
-    border-radius: 0 10px 10px 0;
-}
-
-.tabelaAvaliacoes td img {
-    margin: 0 10px 0 10px;
-}
-
-.tabelaAvaliacoes td {
-    height: 48px;
-    border-bottom: 1px solid #F5F6F9;
-}
-
-.tabelaAvaliacoes tbody tr:hover {
-    background: #F7F6F2;
+.tabelaProfissionais .tableBody ul:hover {
+    background: #44AF6E;
     cursor: pointer;
+    color: #FFF;
+    font-weight: bold;
 }
 
-.tabelaAvaliacoes td:first-child {
-    padding-left: 10px;
+.tabelaProfissionais li {
+    flex: 1;
+}
+
+.tabelaProfissionais li:last-child {
+    text-align: center;
 }
 
 /* .fotoPerfil {
