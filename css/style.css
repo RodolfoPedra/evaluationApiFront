@@ -164,15 +164,16 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 48px;
+    height: 68px;
     padding-left: 10px;
 }
 
 .tabelaProfissionais .tableBody ul {
     border: 1px solid #F3F3F3;
     border-radius: 5px;
-    margin-top: 10px;
+    margin-bottom: 10px;
     box-shadow: 0 0 1px #e1e2e1;
+    background: #FBFBFB;
 }
 
 .tabelaProfissionais .tableBody ul:hover {
@@ -186,15 +187,24 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
     flex: 1;
 }
 
+.tabelaProfissionais li img {
+    margin-right: 10px;
+}
+
+.tabelaProfissionais li:first-child {
+    display: flex;
+    align-items: center;
+}
+
 .tabelaProfissionais li:last-child {
     text-align: center;
 }
 
-/* .fotoPerfil {
+.fotoPerfil {
     width: 36px;
     height: 36px;
-    border-radius: 20px;
-} */
+    border-radius: 50px;
+}
 
 
 /* ESTILIZAÇÕES MODAIS */
@@ -227,14 +237,16 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
     padding: 40px;
     border: 10px solid #2CA55C;
     box-shadow: 0 0 0 10px #FFF;
+    border-radius: 5px;
 }
 
-.fechar {
+#fecharCadastro, #fecharLogin {
     position: absolute;
-    top: -40px;
-    right: -40px;
+    right: -30px;
     width: 50px;
     height: 50px;
+    border-radius: 50%;
+    top: -30px;
 }
 
 #seletorTipoPessoa{
