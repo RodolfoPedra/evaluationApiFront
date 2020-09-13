@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/clr-ui.min.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./css/clr-ui.min.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
+
 <body>
     <header class="headerHome container">
         <div class="localHeader">
-            <span>GARCONOTA10</span>
+            <a href="index.html">
+                <span>GARCONOTA10</span>
+            </a>
         </div>
 
         <div class="listaHeader">
-            <ul >
+            <ul>
                 <li><a href="#">Minhas Avaliações</a></li>
                 <li id="nomeLogin"></li>
                 <li class="cadastrarOuSair"></li>
@@ -37,26 +41,27 @@
             <label for="">Nota</label>
             <input type="text" name="" id="nota-avaliacao" data-avaliacao>
             <input type="button" value="Avaliar" id="btnAvaliar">
-        </div> 
+        </div>
     </section>
 
     <section class="profissionaisHome container">
         <div class="profissionaisRelacao">
-        <h2>Profissionais</h2>
-            <table class="table avaliacoesProfissional">
-                <thead>
-                    <tr>
-                        <th>Usuário</th>
-                        <th>Opinião</th>
-                        <th>Notas</th>
-                    </tr>
-                </thead>
-                <tbody>
-                </tbody>
-            </table>
+            <h2>Profissionais</h2>
+            <div class="avaliacoesProfissional">
+                <div>
+                    <ul>
+                        <li>Usuário</li>
+                        <li>Opinião</li>
+                        <li>Notas</li>
+                    </ul>
+                </div>
+                <div class="tableBody">
+                </div>
+            </div>
         </div>
     </section>
 
     <script type="module" src="../scripts/client.js"></script>
 </body>
+
 </html>

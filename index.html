@@ -1,65 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/clr-ui.min.css">
     <link rel="stylesheet" href="./css/style.css">
 
     <title>Document</title>
 </head>
+
 <body>
+    <div class="container">
+        <header class="headerHome">
+            <div class="row">
+                <div class="localHeader col">
+                    <a href="index.html">
+                        <span>GARCONOTA10</span>
+                    </a>
+                </div>
 
-    <header class="headerHome container">
-            <div class="localHeader">
-                <span>AVALIAPP</span>
-            </div>
-
-            <div class="listaHeader">
-                <ul>
-                    <li id="nomeLogin">Login</li>
-                    <li class="cadastrarOuSair">Cadastre-se</li>
-                    <li class="sair hideLogin">Sair</li>
-                </ul>
-            </div>
-    </header>
-
-    <section class="introducaoHome container">
-        <div class="introDescricao grid-16">
-            <h1>Avalie os melhores profissionais de sua cidade aqui</h1>
-            <span>Bares, Restaurantes e muito mais...</span>
-        </div>
-    </section>
-    
-    <section class="profissionaisHome container">
-        <div class="profissionaisRelacao grid-12">
-        <h2>Profissionais</h2>
-            <div class="tabelaProfissionais">
-                <div>
+                <div class="listaHeader">
                     <ul>
-                        <li >Profissional</li>
-                        <li >Estabelecimento</li>
-                        <li >Avaliação Média</li>
+                        <li id="nomeLogin">Login</li>
+                        <li class="cadastrarOuSair">Cadastre-se</li>
+                        <li class="sair hideLogin">Sair</li>
                     </ul>
                 </div>
-                <div class="tableBody">
+            </div>
+        </header>
+
+        <section class="introducaoHome">
+            <div class="row">
+                <div class="introDescricao col-md-12">
+                    <h1>Avalie os melhores profissionais de sua cidade aqui</h1>
+                    <span>Bares, Restaurantes e muito mais...</span>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <section class="profissionaisHome">
+            <div class="row">
+                <div class="profissionaisRelacao col-md-12">
+                    <h2>Profissionais</h2>
+                    <div class="tabelaProfissionais">
+                        <div>
+                            <ul>
+                                <li>Profissional</li>
+                                <li>Estabelecimento</li>
+                                <li>Avaliação Média</li>
+                            </ul>
+                        </div>
+                        <div class="tableBody">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
 
     <section class="modal-container modal-cadastro" data-modalCadastro="container">
         <div class="modal-itens" id="account">
             <button id="fecharCadastro">X</button>
-            <form action="" method="post" class="grid-5 formItens" >
+            <form action="" method="post" class="grid-5 formItens">
                 <span>Você é ?</span>
                 <select name="" id="seletorTipoPessoaCadastro">
                     <option value="cliente">Cliente</option>
                     <option value="profissional">Profissional</option>
                 </select>
                 <label for="fname">Nome</label>
-                <input type="text" name="fname" id="fname" data-cadastro> 
+                <input type="text" name="fname" id="fname" data-cadastro>
                 <label for="femail">E-mail</label>
                 <input type="text" name="femail" id="femail" data-cadastro>
                 <label for="fpassword">Senha</label>
@@ -77,13 +90,13 @@
     <section class="modal-container modal-login" data-modalCadastro="container">
         <div class="modal-itens" id="account">
             <button id="fecharLogin">X</button>
-            <form action="" method="post" class="grid-5 formItens" >
+            <form action="" method="post" class="grid-5 formItens">
                 <span>Você é ?</span>
                 <select name="" id="seletorTipoPessoaLogin">
                     <option value="">Selecione o tipo de Usuário</option>
                     <option value="cliente">Cliente</option>
                     <option value="profissional">Profissional</option>
-                </select> 
+                </select>
                 <label for="flogin">E-mail</label>
                 <input type="text" name="flogin" id="flogin" data-login>
                 <label for="lPassword">Senha</label>
@@ -96,4 +109,5 @@
 
     <script type="module" src="./scripts/index.js"></script>
 </body>
+
 </html>
